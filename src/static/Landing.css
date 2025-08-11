@@ -10,7 +10,7 @@
   .skyview-background{
     position: absolute;
     inset: 0;
-    background: url("/tree.png") center/cover no-repeat;
+    background: url("https://private-user-images.githubusercontent.com/183172152/476438828-6bc45d22-98f7-41b1-b6ab-faadbdf18497.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTQ4OTEwMDMsIm5iZiI6MTc1NDg5MDcwMywicGF0aCI6Ii8xODMxNzIxNTIvNDc2NDM4ODI4LTZiYzQ1ZDIyLTk4ZjctNDFiMS1iNmFiLWZhYWRiZGYxODQ5Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwODExJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDgxMVQwNTM4MjNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03N2UxMDk3NDA1OTBkZTc1MDM2MDdhZWY4N2Q4MmQ5NGI5MDFmZGIyMmVlNmJiNGEwODhhZjA5NTIzZTIxYWZkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.LQgrSHS6iRGf2OmWUacAKAPcN1qf-i8tnOo4pLTds6w") center/cover no-repeat;
     animation: lightMove 5s infinite alternate ease-in-out;
     z-index: -1;
   }

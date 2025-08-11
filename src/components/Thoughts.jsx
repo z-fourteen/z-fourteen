@@ -2,13 +2,16 @@ import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
 import mammoth from "mammoth";
 import "../static/Thoughts.css";
+const basePath = import.meta.env.BASE_URL;
 
 const thoughtsMeta = [
-  { title: "2024.10.20", date: "2024-10-20", file: "/thoughts/2024.10.20.docx" },
-  { title: "唯有遇见，才能看见", date: "2024-08-028", file: "/thoughts/唯有遇见 才能看见.docx" },
-  { title: "一些开学想说的话", date: "2025-02-23", file: "/thoughts/一些开学想说的话.docx" },
-  { title: "2025.7.14", date: "2025-07-14", file: "/thoughts/2025.7.14.docx" },
-];
+    { title: "2024.10.20", date: "2024-10-20", file: `${basePath}thoughts/2024.10.20.docx` },
+    { title: "唯有遇见，才能看见", date: "2024-08-28", file: `${basePath}thoughts/唯有遇见_才能看见.docx` },
+    { title: "一些开学想说的话", date: "2025-02-23", file: `${basePath}thoughts/一些开学想说的话.docx` },
+    { title: "2025.7.14", date: "2025-07-14", file: `${basePath}thoughts/2025.7.14.docx` },
+  ];
+  
+
 
 async function loadFile(meta) {
     try {
