@@ -1,0 +1,82 @@
+.study-container {
+    padding: 24px;
+    background-color: #f9fafb;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #111827;
+  }
+  
+  /* 搜索框 */
+  .search-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px 12px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+  }
+  
+  /* 没结果提示 */
+  .no-results {
+    color: #6b7280;
+    font-style: italic;
+  }
+  
+  .semester-block {
+    margin-bottom: 32px;
+  }
+  
+  .semester-title {
+    font-size: 25px;
+    font-weight: 800;
+    color: #029d1c;
+    margin-bottom: 16px;
+  }
+  
+  .subject-block {
+    margin-bottom: 16px;
+    padding-left: 12px;
+    border-left: 4px solid #4eb087;
+  }
+  
+  .subject-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0a792d;
+    margin-bottom: 8px;
+  }
+  
+  .file-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .file-item {
+    margin-bottom: 6px;
+  }
+  
+  .file-link {
+    text-decoration: none;
+    color: #848404;
+    transition: color 0.2s;
+  }
+  
+  .file-link:hover {
+    text-decoration: underline;
+    color: #503e03;
+  }
+  
