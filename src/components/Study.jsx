@@ -1,6 +1,10 @@
 import "../static/Study.css";
 import React, { useState } from "react";
 
+// 统一处理路径：补上 BASE_URL + URL 编码
+const toGhUrl = (url = "") =>
+  encodeURI(`${import.meta.env.BASE_URL}${url.replace(/^\//, "")}`);
+
 const studyData = [
   {
     semester: "2024 fall semester",
@@ -16,13 +20,13 @@ const studyData = [
         files: [
           { title: "作家书写习惯分析大作业源代码", url: "/files/code/c/PB24061302 赵国华 大作业-作家书写习惯分析.rar" },
           { title: "作家书写习惯分析大作业报告", url: "/files/code/c/作业报告.pdf" },
-          { title:"习题课讲义", url: "/files/code/c/习题课讲义.pdf" },
+          { title: "习题课讲义", url: "/files/code/c/习题课讲义.pdf" },
         ],
       },
       {
         name: "大学生心理学/ Introduction to Psychology",
-        files:[
-            { title:"大学生心理学大作业", url: "/files/others/大作业.pdf" },
+        files: [
+          { title: "大学生心理学大作业", url: "/files/others/大作业.pdf" },
         ]
       }
     ],
@@ -34,7 +38,7 @@ const studyData = [
         name: "数学分析/Calculus",
         files: [
           { title: "课后题答案", url: "/files/math/answer.pdf" },
-          { title:"微积分学习指导下册", url: "/files/math/微积分学习指导 下册.pdf" },
+          { title: "微积分学习指导下册", url: "/files/math/微积分学习指导 下册.pdf" },
           { title: "数学分析习题课讲义（第二版）下册 谢惠民", url: "/files/math/数学分析习题课讲义（第二版）下册 谢惠民.pdf" },
           { title: "期中复习资料", url: "/files/math/midterm-review.pdf" },
           { title: "期末复习资料", url: "/files/math/final-review.pdf" }
@@ -43,7 +47,7 @@ const studyData = [
       {
         name: "数据结构/Data Structures",
         files: [
-          { title: "复习资料", url: "/files/ds/ds.pdf" },
+          { title: "复习资料", url: "/files/code/ds/ds.pdf" },
         ]
       }
     ],
@@ -53,25 +57,24 @@ const studyData = [
 const StudyMaterialsPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
-  // 搜索逻辑
-  const filteredData = studyData.map((semester) => ({
-    ...semester,
-    subjects: semester.subjects
-      .map((subject) => ({
-        ...subject,
-        files: subject.files.filter(
-          (file) =>
-            file.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-            subject.name.toLowerCase().includes(searchTerm.toLowerCase())
-        ),
-      }))
-      .filter((subject) => subject.files.length > 0),
-  })).filter((semester) => semester.subjects.length > 0);
+  const filteredData = studyData
+    .map((semester) => ({
+      ...semester,
+      subjects: semester.subjects
+        .map((subject) => ({
+          ...subject,
+          files: subject.files.filter(
+            (file) =>
+              file.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+              subject.name.toLowerCase().includes(searchTerm.toLowerCase())
+          ),
+        }))
+        .filter((subject) => subject.files.length > 0),
+    }))
+    .filter((semester) => semester.subjects.length > 0);
 
   return (
     <div className="study-container">
-
-      {/* 搜索框 */}
       <input
         type="text"
         placeholder="搜索文件或科目..."
@@ -93,9 +96,8 @@ const StudyMaterialsPage = () => {
                   {subject.files.map((file, fIndex) => (
                     <li key={fIndex} className="file-item">
                       <a
-                        href={file.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href={toGhUrl(file.url)}
+                        download
                         className="file-link"
                       >
                         {file.title}
