@@ -47,7 +47,7 @@ const studyData = [
       {
         name: "数据结构/Data Structures",
         files: [
-          { title: "复习资料", url: "/files/code/ds/ds.pdf" },
+          { title: "复习资料", url: "/files/code/ds/data_structure.pdf" },
         ]
       }
     ],
