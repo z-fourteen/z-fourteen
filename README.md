@@ -34,10 +34,8 @@
 ---
 
 ### 📊 Statistical Identity
-
 <p align="center">
-  <img height="180em" src="https://github-readme-stats-git-masterhst-pabbis-projects.vercel.app/api?username=z-fourteen&show_icons=true&theme=radical&count_private=true&hide_border=true" />
-  <img height="180em" src="https://github-readme-stats-git-masterhst-pabbis-projects.vercel.app/api/top-langs/?username=z-fourteen&layout=compact&theme=radical&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=z-fourteen&theme=react-dark&area=true&hide_border=true" width="100%" />
 </p>
 
 ---
