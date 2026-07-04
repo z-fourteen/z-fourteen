@@ -1,10 +1,13 @@
 # z-fourteen | Guohua Zhao | USTC
-### 🧠 Research Interests:World Models & 3D Vision
+
+---
+
+###  Research Interests：World Models & 3D Vision
 feedforward 3D, environment simulation,3D/2D representations, and large multi-modal foundation models.
 
 ---
 
-### 🛠 Tech Stack & Tools
+###  Tech Stack & Tools
 
 #### **AI & Data Science**
 <p align="left">
