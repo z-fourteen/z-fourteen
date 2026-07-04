@@ -1,9 +1,4 @@
 # z-fourteen | Guohua Zhao | USTC | Data Science
-
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=EB+Garamond&size=24&pause=1500&color=7B68EE&center=true&vCenter=true&width=600&lines=Exploring+World+Models;Deep+Learning+%26+3D+Vision+Researcher;Data+Science+at+USTC" alt="Typing SVG" />
-</p>
-
 ---
 
 ### 🧠 Research Interests
