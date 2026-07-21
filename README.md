@@ -6,7 +6,7 @@
   </a>
 </p>
 
-I am a sophomore undergraduate student at the **University of Science and Technology of China (USTC)**, majoring in Big Data and AI. I am actively seeking my **first internship** in Backend Development, AI Applications, or AI/3D Vision Algorithms.
+I am a sophomore undergraduate student at the **University of Science and Technology of China (USTC)**, majoring in Data Science. I am actively seeking my **first internship** in Backend Development, AI Applications, or AI/3D Vision Algorithms.
 
 - 🔬 **Research Interests:** World Models, 3D Vision, Spatial AI, and Large Multi-modal Models (MLLM).
 - 🛠️ **Current Focus:** Bridging the gap between 3D representation learning and robust backend engineering.
